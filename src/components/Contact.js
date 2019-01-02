@@ -1,4 +1,5 @@
 import React from 'react';
+import Rainbow from '../hoc/Rainbow';
 
 const Contact = () => {
   return (
@@ -6,4 +7,4 @@ const Contact = () => {
   );
 }
 
-export default Contact;
+export default Rainbow(Contact);

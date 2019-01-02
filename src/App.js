@@ -12,7 +12,7 @@ class App extends Component {
         <div id="App">
           <Header />
 
-          <Route path="/" exact component={Home}></Route>
+          <Route path="/" exact render={() => <Home heading="Home" />}></Route>
           <Route path="/about" component={About}></Route>
           <Route path="/contact" component={Contact}></Route>
         </div>

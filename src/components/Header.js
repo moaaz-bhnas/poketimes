@@ -1,7 +1,8 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, withRouter } from 'react-router-dom';
 
-const Header = () => {
+const Header = (props) => {
+  // setTimeout(() => props.history.push('/contact'), 3000);
   return (
     <React.Fragment>
       <h1>Poke'Times</h1>
@@ -19,4 +20,4 @@ const Header = () => {
   );
 }
 
-export default Header;
+export default withRouter(Header); // Higher order component wraps another component to give it extra powers
